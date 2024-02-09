@@ -1,1 +1,1 @@
-Проект закрывающий тег: git@github.com:MaxTever/zakrivayuschiy-teg-f.git
+Проект закрывающий тег: https://github.com/MaxTever/zakrivayuschiy-teg-f.git

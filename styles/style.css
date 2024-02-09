@@ -240,9 +240,6 @@
   justify-self: start;
   position: relative;
   z-index: 1;
-  /* align-items: center;
-  justify-items: center; */
-  /* justify-self: end; */
   padding: 0;
   height: min-content;
   background-color: inherit;
@@ -273,7 +270,6 @@
   background-color: transparent;
 }
 
-
 .button:focus {
   outline: none;
 }
@@ -286,7 +282,6 @@
 .button:hover {
   cursor: pointer;
 }
-
 
 .button::before {
   content: "";
