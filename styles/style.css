@@ -17,13 +17,14 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font), "Inter", sans-serif;
   font-variation-settings: 'wght' var(--main-card-font-weight);
   background-color: var(--background-color, #ffff);
   color: var(--accent-color, #000);
   background-image: var(--page-background-image);
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
 }
 
 
@@ -38,7 +39,7 @@
 }
 
 .header_title {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), "PressStart2p", fantasy;
   font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
   font-style: normal;
   font-weight: var(--main-card-font-weight);
@@ -50,7 +51,7 @@
 .header_desc {
   margin-top: 20px;
   color: var(--accent-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), "PressStart2p", fantasy;
   font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
   font-style: normal;
   font-weight: var(--main-card-font-weight);
@@ -59,7 +60,7 @@
 }
 
 .header__theme-menu {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), "PressStart2p", fantasy;
   margin: 23px;
   font-size: 14px;
   font-weight: 400;
@@ -134,7 +135,8 @@
   opacity: 0.6;
   width: 16px;
   height: 13px;
-  inset-inline-start: -13px;
+  left: -13px;
+  top: auto;
   animation: arrow 0.5s ease-in-out infinite alternate;
 }
 
@@ -146,7 +148,7 @@
 
 .card-list {
   display: grid;
-  row-gap: 54px;
+  row-gap: 50px;
 }
 
 .card {
@@ -157,13 +159,16 @@
 }
 
 .card__title {
-  padding: 3px 10px;
+  padding: 4.5px 10px;
   border-bottom: 2px solid var(--accent-color);
 }
 
 .card__title-text {
-  font-family: var(--main-font);
+  font-family: var(--main-font), "Inter", sans-serif;
   font-weight: var(--title-card-font-weight);
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
 }
 
 .img-wrapper {
@@ -174,7 +179,7 @@
   position: absolute;
   z-index: 1;
   color: var(--accent-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), "PressStart2p", fantasy;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -204,23 +209,46 @@
   object-position: center;
   object-fit: cover;
   inline-size: 100%;
+  block-size: 100%;
   aspect-ratio: 1 / 1;
 }
 
+.card__content {
+  padding: 29px 25px 25px 25px;
+  border-block-start: 2px solid var(--accent-color);
+}
 
 .card__text {
   display: grid;
-  padding: 27px 30px 25px 25px;
+  gap: 28px;
+}
+
+/* .card__text {
+  display: grid;
   gap: 27px;
-  border-block-start: 2px solid var(--accent-color);
-  font-family: var(--main-font);
+  font-size: 18px;
+  line-height: 21px;
+  flex-shrink: 0;
+  font-weight: var(--main-card-font-weight);
+  font-family: var(--main-font), "Inter", sans-serif;
+} */
+
+.text {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: var(--main-card-font-weight);
+  font-family: var(--main-font), "Inter", sans-serif;
+}
+
+/* .card__text {
+  display: grid;
+  gap: 29px;
+  font-family: var(--main-font), "Inter", sans-serif;
   font-size: 18px;
   font-weight: var(--main-card-font-weight);
   font-style: normal;
   line-height: 21px;
-} 
-
-
+}  */
 
 .card-footer {
   display: flex;
@@ -231,9 +259,10 @@
 
 
 .like-icon {
-  block-size: 36px;
+  block-size: 34px;
   inline-size: 39px;
 }
+
 
 .card__icon-button {
   display: grid;
@@ -247,6 +276,8 @@
   cursor: pointer;
   appearance: none;
   margin-right: 2px;
+  transition: border 0.3s ease;
+  margin-top: 25px;
 }
 
 .card__icon-button:focus {
@@ -256,7 +287,6 @@
 .card__icon-button:focus-visible {
   outline: none;
   border: 2px solid var(--accent-color);
-  transition: border 0.3s ease;
 }
 
 /* обшие стили кнопок */
@@ -268,6 +298,7 @@
   align-items: center;
   border: 2px solid var(--accent-color);
   background-color: transparent;
+  transition: box-shadow 0.3s ease;
 }
 
 .button:focus {
@@ -276,7 +307,6 @@
 
 .button:focus-visible {
   box-shadow: 2px 2px 0 var(--accent-color);
-  transition: box-shadow 0.3s ease;
 }
 
 .button:hover {
@@ -309,12 +339,12 @@
   padding: 9px 17px;
   gap: 10px;
   flex-shrink: 0;
-  margin: 0 25px 25px 0;
+  margin: 25px 0 0 0;
 }
 
 .button__text {
   position: relative;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), "PressStart2p", fantasy;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -358,18 +388,19 @@
   display: grid;
   justify-content: center;
   inline-size: clamp(21.313rem, 20.96rem + 1.502vw, 22.313rem);
-  block-size: 192px;
+  min-block-size: 192px;
   border: 2px solid var(--accent-color, #000);
   row-gap: 30px;
   column-gap: 20px;
   background-color: var(--background-color);
   grid-template-columns: min-content clamp(12.375rem, 11.583rem + 3.38vw, 14.625rem);
   grid-template-rows: 1fr auto;
+  padding: 30px 16px 30px 16px;
 }
 
 .dialog__text {
   text-transform: uppercase;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), "PressStart2p", fantasy;
   align-self: center;
   font-size: 14px;
   font-style: normal;
@@ -399,31 +430,31 @@
 }
 
 
-.card__filter-1 {
+.card__filter-grayscale {
   filter: grayscale(0.8);
 }
 
-.card__filter-2 {
+.card__filter-contrast {
   filter: contrast(3);
 }
 
-.card__filter-3 {
+.card__filter-sepia {
   filter: sepia(60%);
 }
 
-.card__filter-4 {
+.card__filter-invert {
   filter: invert(0.7);
 }
 
-.card__filter-5 {
+.card__filter-blur {
   filter: blur(1rem);
 }
 
-.card__filter-6 {
+.card__filter-saturate {
   filter: saturate(158%);
 }
 
-.card__filter-7 {
+.card__filter-mixed {
   filter: sepia(1.2) contrast(1.2) brightness(80%) blur(0.3rem);
 }
 
@@ -435,13 +466,31 @@
     flex-direction: column;
   }
 
+  .card__image__label{
+    inset-block-start: 23px;
+    inset-inline-end: 11px;
+  }
+
+  .card__title-text {
+    align-self: stretch;
+  }
+
+  .card__content {
+    padding: 26px 25px 25px 25px;
+  }
+
+  .text {
+    padding-right: 15.95px;
+    text-transform: inherit;
+  }
+
   .floppy__button {
     block-size: 28px;
     inline-size: 28px;
   }
 
   .dialog[open] {
-    padding: 28px 34px 28px 40px;
-    block-size: 195px;
+    padding: 30px 38px 30px 38px;
+    min-block-size: 195px;
   }
 }
