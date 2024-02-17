@@ -11,6 +11,7 @@
     --main-card-font-weight: 400;
     --title-card-font-weight: 700;
     --background-color: var(--color-white, #FFFF); 
+    --button-text: var(--color-white, #fff);
     --accent-color: var(--color-black, #000) ;
     --page-background-image:   repeating-linear-gradient(
                 to left,  
