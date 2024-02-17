@@ -214,13 +214,15 @@
 }
 
 .card__content {
-  padding: 29px 25px 25px 25px;
+  padding: 29px 23px 25px 23px;
+  /* padding: 25px; */
   border-block-start: 2px solid var(--accent-color);
 }
 
 .card__text {
-  display: grid;
-  gap: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
 }
 
 /* .card__text {
@@ -235,9 +237,14 @@
 
 .text {
   font-size: 18px;
-  line-height: 21px;
+  line-height: 115%;
+  word-spacing: 0.15rem;
+  /* letter-spacing: 0.002rem; */
   font-weight: var(--main-card-font-weight);
-  font-family: var(--main-font), "Inter", sans-serif;
+  /* font-family: var(--main-font), "Inter", sans-serif; */
+  /* font-variation-settings: "wght" var(--main-card-font-weight); */
+
+
 }
 
 /* .card__text {

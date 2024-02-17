@@ -12,7 +12,7 @@
     --like-main-body-color: none;
     --like-active-color: var(--color-red, #FF0000);
     --sparks-color: var(--color-red, #FF0000);
-    --main-font: 'Inter', sans-serif;
+    --main-font: 'Inter-Variable', sans-serif;
     --accent-font: 'PressStart2P', fantasy;
     --main-card-font-weight: 400;
     --title-card-font-weight: 700;
