@@ -17,7 +17,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font), "Inter", sans-serif;
+  font-family: var(--main-font);
   font-variation-settings: 'wght' var(--main-card-font-weight);
   background-color: var(--background-color, #ffff);
   color: var(--accent-color, #000);
@@ -243,8 +243,6 @@
   font-weight: var(--main-card-font-weight);
   /* font-family: var(--main-font), "Inter", sans-serif; */
   /* font-variation-settings: "wght" var(--main-card-font-weight); */
-
-
 }
 
 /* .card__text {
