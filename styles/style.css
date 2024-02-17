@@ -19,8 +19,8 @@
   min-block-size: 100dvb;
   font-family: var(--main-font);
   font-variation-settings: 'wght' var(--main-card-font-weight);
-  background-color: var(--background-color, #ffff);
-  color: var(--accent-color, #000);
+  background-color: var(--background-color);
+  color: var(--accent-color);
   background-image: var(--page-background-image);
   background-size: cover;
   background-attachment: fixed;
@@ -32,14 +32,14 @@
   display: grid;
   align-items: center;
   justify-items: center;
-  background-color: var(--background-color, #ffff);
+  background-color: var(--background-color);
   border: 2px solid var(--accent-color);
   margin: 102px auto 100px;
   width: clamp(23.438rem, 16.373rem + 30.141vw, 43.5rem);
 }
 
 .header_title {
-  font-family: var(--accent-font), "PressStart2p", fantasy;
+  font-family: var(--accent-font);
   font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
   font-style: normal;
   font-weight: var(--main-card-font-weight);
@@ -51,7 +51,7 @@
 .header_desc {
   margin-top: 20px;
   color: var(--accent-color);
-  font-family: var(--accent-font), "PressStart2p", fantasy;
+  font-family: var(--accent-font);
   font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
   font-style: normal;
   font-weight: var(--main-card-font-weight);
@@ -60,7 +60,7 @@
 }
 
 .header__theme-menu {
-  font-family: var(--accent-font), "PressStart2p", fantasy;
+  font-family: var(--accent-font);
   margin: 23px;
   font-size: 14px;
   font-weight: 400;
@@ -179,7 +179,7 @@
   position: absolute;
   z-index: 1;
   color: var(--accent-color);
-  font-family: var(--accent-font), "PressStart2p", fantasy;
+  font-family: var(--accent-font);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -349,7 +349,7 @@
 
 .button__text {
   position: relative;
-  font-family: var(--accent-font), "PressStart2p", fantasy;
+  font-family: var(--accent-font);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -405,7 +405,7 @@
 
 .dialog__text {
   text-transform: uppercase;
-  font-family: var(--accent-font), "PressStart2p", fantasy;
+  font-family: var(--accent-font);
   align-self: center;
   font-size: 14px;
   font-style: normal;
